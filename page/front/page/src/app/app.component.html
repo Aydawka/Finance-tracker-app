@@ -1,0 +1,18 @@
+<h1>Welcome to Aydawkas integration Angular+Python</h1>
+<hr>
+
+
+<table id="weather">
+        <tr>
+            <th *ngFor="let column of headers">
+                {{column}}
+            </th>
+        </tr>
+    
+        <tr *ngFor="let row of weather">
+            <td *ngFor="let col of headers">
+                {{row[col]}}
+            </td>
+        </tr>
+    
+</table>
